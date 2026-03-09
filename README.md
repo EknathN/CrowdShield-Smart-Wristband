@@ -2,7 +2,7 @@
 
 Large public gatherings such as concerts, festivals, sports events, and religious celebrations often face safety challenges because of high crowd density. In such crowded environments, incidents like medical emergencies, harassment, or sudden panic situations can occur unexpectedly. When these events happen, it becomes difficult for security personnel to quickly identify the person in distress and locate them within the crowd. Delays in response can increase the risk of injuries and create confusion among participants.
 
-To address this issue, our project proposes a smart concert wristband that combines entertainment features with emergency safety support. The wristband functions as a concert entry band while also integrating a compact electronic system built around an ESP32‑C3 microcontroller. The device includes an SOS push button, RGB LED indicator, and buzzer, allowing users to quickly request help during an emergency.
+To address this issue, our project proposes a smart concert wristband that combines entertainment features with emergency safety support. The wristband functions as a concert entry band while also integrating a compact electronic system built around an ESP32‑C3 microcontroller. The device includes an SOS push button, and buzzer, allowing users to quickly request help during an emergency.
 
 Under normal conditions, the RGB LED wristband can be used for concert lighting effects and audience interaction, creating a synchronized visual experience across the crowd. However, if a user faces an emergency, pressing the SOS button immediately sends a Bluetooth Low Energy (BLE) alert signal to nearby receiver nodes installed across the event venue.
 
