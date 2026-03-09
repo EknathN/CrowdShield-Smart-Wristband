@@ -8,6 +8,63 @@ Under normal conditions, the wristband can be used for concert lighting effects 
 
 These ESP32 receiver modules continuously scan for emergency signals. When an alert is detected, the receivers measure the signal strength (RSSI) and send the data to a central monitoring system. Using this information, the system can estimate the approximate location of the user and display it on a dashboard map, enabling security teams to respond quickly.
 
-The system also allows group connectivity between wristbands, so that if one person in a group activates the SOS alert, nearby connected wristbands can display a visual indication. This helps friends or people nearby notice the emergency and provide immediate assistance even before security teams arrive.
+The system also allows group connectivity between wristbands, so that if one person in a group activates the SOS alert, nearby connected wristbands can display a visual indication in mobile application. This helps friends or people nearby notice the emergency and provide immediate assistance even before security teams arrive.
 
 Overall, the proposed solution provides a low‑cost, scalable, and practical safety system for large public events. By combining a concert RGB wristband with an integrated emergency alert mechanism, the system enhances both audience experience and crowd safety while reducing response time during critical situations.
+
+START
+  │
+  │
+User wears Smart Concert Wristband
+  │
+  │
+System initializes ESP32‑C3 wristband
+  │
+  │
+Normal Concert Mode
+(RGB LED lighting effects)
+  │
+  │
+Is SOS Button Pressed?
+        │
+   ┌────┴─────┐
+   │          │
+  NO         YES
+   │          │
+Continue      │
+concert       │
+lighting      │
+mode          │
+              ▼
+      Wristband sends
+      BLE SOS Signal
+              │
+              ▼
+      Receiver ESP32
+      scans for signal
+              │
+              ▼
+      SOS Signal Detected?
+        │
+   ┌────┴─────┐
+   │          │
+  NO         YES
+   │          │
+Continue      ▼
+Scanning   Activate
+            Buzzer + LED
+              │
+              ▼
+      Send alert data
+      to dashboard
+              │
+              ▼
+     Display location
+     on monitoring map
+              │
+              ▼
+      Security team
+      responds quickly
+              │
+              ▼
+             END
