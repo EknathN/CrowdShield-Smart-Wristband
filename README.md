@@ -1,5 +1,4 @@
-# CrowdShield-Smart-Wristband
-Abstract
+# CrowdShield-Smart-Wristband-Abstract
 
 Large public gatherings such as concerts, festivals, sports events, and religious celebrations often face safety challenges because of high crowd density. In such crowded environments, incidents like medical emergencies, harassment, or sudden panic situations can occur unexpectedly. When these events happen, it becomes difficult for security personnel to quickly identify the person in distress and locate them within the crowd. Delays in response can increase the risk of injuries and create confusion among participants.
 
